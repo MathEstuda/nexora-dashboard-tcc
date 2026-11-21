@@ -54,7 +54,7 @@ Todos os dados incluídos neste repositório são fictícios ou simulados para f
 
 Endereço pretendido:
 
-https://matheus-av4-final-tcc.streamlit.app
+https://nexora-dashboard-tcc-matheus-av4-final-tcc.streamlit.app
 
 ## Autor
 
