@@ -1444,7 +1444,7 @@ with aba_operacoes:
 
     st.dataframe(
         atividades_exibicao,
-        use_container_width=True,
+        width="stretch",
         hide_index=True
     )
 
@@ -1511,7 +1511,7 @@ with aba_operacoes:
 
     st.plotly_chart(
         grafico_volume,
-        use_container_width=True,
+        width="stretch",
         config={
             "displaylogo": False,
             "responsive": True
@@ -1561,7 +1561,7 @@ with aba_indicadores:
 
     st.dataframe(
         indicadores_exibicao,
-        use_container_width=True,
+        width="stretch",
         hide_index=True
     )
 
@@ -1650,7 +1650,7 @@ with aba_indicadores:
 
     st.plotly_chart(
         grafico_indicadores,
-        use_container_width=True,
+        width="stretch",
         config={
             "displaylogo": False,
             "responsive": True
@@ -1732,7 +1732,7 @@ with aba_indicadores:
 
             st.dataframe(
                 ocorrencias_exibicao,
-                use_container_width=True,
+                width="stretch",
                 hide_index=True
             )
 
@@ -1773,7 +1773,7 @@ with aba_indicadores:
 
             st.dataframe(
                 encaminhamentos_exibicao,
-                use_container_width=True,
+                width="stretch",
                 hide_index=True
             )
 
@@ -2759,7 +2759,7 @@ with aba_central_dados:
                 "application/vnd.openxmlformats-"
                 "officedocument.spreadsheetml.sheet"
             ),
-            use_container_width=True,
+            width="stretch",
             key="download_modelo_gerarel"
         )
 
@@ -2790,7 +2790,7 @@ with aba_central_dados:
             validar_arquivo = st.button(
                 "🔍 Validar planilha enviada",
                 type="primary",
-                use_container_width=True,
+                width="stretch",
                 key="validar_planilha_gerarel"
             )
 
@@ -3180,7 +3180,7 @@ with aba_central_dados:
                             dados_mapeamento_visual
                         ),
                         hide_index=True,
-                        use_container_width=True
+                        width="stretch"
                     )
 
                 if sugestoes_resultado:
@@ -4036,7 +4036,7 @@ with aba_central_dados:
                     confirmar_planilha = st.button(
                         "✅ Confirmar planilha validada",
                         type="primary",
-                        use_container_width=True,
+                        width="stretch",
                         disabled=(
                             not qualidade_aprovada
                         ),
@@ -4505,7 +4505,7 @@ with aba_fluxo_guiado:
         gerar_prompt_wizard = st.button(
             "⚙️ Gerar prompt do cenário",
             type="primary",
-            use_container_width=True,
+            width="stretch",
             key=f"{prefixo_wizard}_gerar_prompt"
         )
 
@@ -4930,7 +4930,7 @@ sobre o processo de geração.
                     mime="text/plain",
 
 
-                    use_container_width=True,
+                    width="stretch",
 
 
                     key=(
@@ -4982,7 +4982,7 @@ sobre o processo de geração.
                 st.form_submit_button(
                     "💾 Preservar original e continuar",
                     type="primary",
-                    use_container_width=True,
+                    width="stretch",
                     disabled=(
                         not st.session_state.get(
                             chave_prompt_preparado,
@@ -5100,7 +5100,7 @@ sobre o processo de geração.
                 st.form_submit_button(
                     "💾 Salvar revisão e continuar",
                     type="primary",
-                    use_container_width=True
+                    width="stretch"
                 )
             )
 
@@ -5161,7 +5161,7 @@ sobre o processo de geração.
 
         if st.button(
             "⬅️ Voltar ao rascunho",
-            use_container_width=True,
+            width="stretch",
             key=f"{prefixo_wizard}_voltar_1"
         ):
 
@@ -5194,7 +5194,7 @@ sobre o processo de geração.
         executar_analise_wizard = st.button(
             "🔍 Analisar alterações",
             type="primary",
-            use_container_width=True,
+            width="stretch",
             key=f"{prefixo_wizard}_analisar"
         )
 
@@ -5351,7 +5351,7 @@ sobre o processo de geração.
             if st.button(
                 "Continuar para avaliação humana ➡️",
                 type="primary",
-                use_container_width=True,
+                width="stretch",
                 key=f"{prefixo_wizard}_continuar_4"
             ):
 
@@ -5360,7 +5360,7 @@ sobre o processo de geração.
 
         if st.button(
             "⬅️ Voltar à revisão",
-            use_container_width=True,
+            width="stretch",
             key=f"{prefixo_wizard}_voltar_2"
         ):
 
@@ -5766,7 +5766,7 @@ sobre o processo de geração.
                 st.form_submit_button(
                     "🧮 Calcular classificação",
                     type="primary",
-                    use_container_width=True
+                    width="stretch"
                 )
             )
 
@@ -6141,7 +6141,7 @@ sobre o processo de geração.
             confirmar_avaliacao = st.button(
                 "✅ Confirmar avaliação e continuar",
                 type="primary",
-                use_container_width=True,
+                width="stretch",
                 key=f"{prefixo_wizard}_confirmar_5"
             )
 
@@ -6152,7 +6152,7 @@ sobre o processo de geração.
 
         if st.button(
             "⬅️ Voltar à análise",
-            use_container_width=True,
+            width="stretch",
             key=f"{prefixo_wizard}_voltar_3"
         ):
 
@@ -6176,7 +6176,7 @@ sobre o processo de geração.
         executar_validacao_wizard = st.button(
             "🔎 Executar validação de fidelidade",
             type="primary",
-            use_container_width=True,
+            width="stretch",
             key=f"{prefixo_wizard}_validar"
         )
 
@@ -7638,7 +7638,7 @@ sobre o processo de geração.
 
         if st.button(
             "⬅️ Voltar à avaliação",
-            use_container_width=True,
+            width="stretch",
             key=f"{prefixo_wizard}_voltar_4"
         ):
 
@@ -7657,7 +7657,7 @@ sobre o processo de geração.
 
         if st.button(
             "🗑️ Apagar esta execução e recomeçar",
-            use_container_width=True,
+            width="stretch",
             key=f"{prefixo_wizard}_reset"
         ):
 
@@ -7992,7 +7992,7 @@ with aba_validacao:
 
     st.dataframe(
         tabela_testes,
-        use_container_width=True,
+        width="stretch",
         hide_index=True
     )
 
@@ -8022,7 +8022,7 @@ with aba_validacao:
         data=csv_testes,
         file_name=nome_arquivo_testes,
         mime="text/csv",
-        use_container_width=True
+        width="stretch"
     )
 
     st.info(
